@@ -12,7 +12,7 @@
   <header class="navbar">
     <nav>
       <ul>
-         <li><img class="llogoja" src="/Photos/Llogo.png" alt=""></li>
+         <li><img class="llogoja" src="Photos/Llogo.png" alt=""></li>
         <li><a href="#">Product</a></li>
         <li><a href="#">Solutions</a></li>
         <li><a href="#">Resources</a></li>
@@ -32,8 +32,8 @@
       <h1>Take ideas from <br><span>better to best</span></h1>
       <p>Miro is your team's visual platform to connect, collaborate, and create — together.</p>
       <div class="form">
-        <input type="email" placeholder="Enter your work email">
-        <button class="btn primary">Sign up free →</button>
+        <input id="emailInput" type="email" placeholder="Enter your work email">
+        <button id="signUpBtn" class="btn primary">Sign up free →</button>
       </div>
       <p class="caption">Collaborate with your team within minutes</p>
      <div class="ratings">
@@ -119,7 +119,7 @@
     </div>
   </section>
   <div class="collab-button">
-     <button>Sign up for free →</button>
+     <button id="loadBtn">Sign up for free →</button>
      </div>
 
 
@@ -370,5 +370,8 @@
 
 <script src="slider.js"></script>
 
+ <script type="module" src="./main.js"></script>
+
+ 
 </body>
 </html>
