@@ -10,7 +10,7 @@
   <header class="navbar">
     <nav>
       <ul>
-         <li><img class="llogoja" src="/Photos/Llogo.png" alt=""></li>
+         <li><img class="llogoja" src="Photos/Llogo.png" alt=""></li>
         <li><a href="#">Product</a></li>
         <li><a href="#">Solutions</a></li>
         <li><a href="#">Resources</a></li>
@@ -356,6 +356,15 @@
   </div>
 </footer>
 
+
+ <script type="module">
+  import { showToast } from './exercise1.js';
+  console.log("Module");
+  
+  showToast('Welcome! Signed up successfully.', 'success');
+    showToast('Signed up was not successfull.', 'error');
+
+</script>
 
 </body>
 </html>
