@@ -30,8 +30,8 @@
       <h1>Take ideas from <br><span>better to best</span></h1>
       <p>Miro is your team's visual platform to connect, collaborate, and create — together.</p>
       <div class="form">
-        <input type="email" placeholder="Enter your work email">
-        <button class="btn primary">Sign up free →</button>
+        <input id="emailInput" type="email" placeholder="Enter your work email">
+        <button id="signUpBtn" class="btn primary">Sign up free →</button>
       </div>
       <p class="caption">Collaborate with your team within minutes</p>
      <div class="ratings">
@@ -357,14 +357,7 @@
 </footer>
 
 
- <script type="module" src="./main.js">
-  import { showToast } from './exercise1.js';
-  console.log("Module");
-  
-  showToast('Welcome! Signed up successfully.', 'success');
-    showToast('Signed up was not successfull.', 'error');
-
-</script>
+ <script type="module" src="./main.js"></script>
 
  
 </body>
