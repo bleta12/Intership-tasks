@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Walmart",
+    "description": "Walmart is a multinational retail corporation that operates a chain of hypermarkets.",
+    "logo": "https://logo.clearbit.com/walmart.com"
+  },
+  {
+    "id": 2,
+    "name": "Volvo",
+    "description": "Volvo is a Swedish multinational manufacturing company known for trucks and cars.",
+    "logo": "https://logo.clearbit.com/volvo.com"
+  },
+  {
+    "id": 3,
+    "name": "Okta",
+    "description": "Okta provides secure identity management and single sign-on services.",
+    "logo": "https://logo.clearbit.com/okta.com"
+  },
+  {
+    "id": 4,
+    "name": "Cisco",
+    "description": "Cisco designs, manufactures, and sells networking equipment worldwide.",
+    "logo": "https://logo.clearbit.com/cisco.com"
+  },
+  {
+    "id": 5,
+    "name": "Deloitte",
+    "description": "Deloitte is a multinational professional services network offering audit, consulting, and advisory.",
+    "logo": "https://logo.clearbit.com/deloitte.com"
+  },
+  {
+    "id": 6,
+    "name": "Apple",
+    "description": "Apple designs and sells consumer electronics, computer software, and online services.",
+    "logo": "https://logo.clearbit.com/apple.com"
+  },
+  {
+    "id": 7,
+    "name": "Google",
+    "description": "Google specializes in internet-related services and products including online advertising.",
+    "logo": "https://logo.clearbit.com/google.com"
+  },
+  {
+    "id": 8,
+    "name": "Microsoft",
+    "description": "Microsoft develops, manufactures, licenses, and supports software products and services.",
+    "logo": "https://logo.clearbit.com/microsoft.com"
+  },
+  {
+    "id": 9,
+    "name": "Amazon",
+    "description": "Amazon focuses on e-commerce, cloud computing, digital streaming, and AI services.",
+    "logo": "https://logo.clearbit.com/amazon.com"
+  },
+  {
+    "id": 10,
+    "name": "Facebook",
+    "description": "Facebook is a social networking company, part of Meta Platforms, Inc.",
+    "logo": "https://logo.clearbit.com/facebook.com"
+  },
+  {
+    "id": 11,
+    "name": "IBM",
+    "description": "IBM offers hardware, software, cloud-based services and cognitive computing.",
+    "logo": "https://logo.clearbit.com/ibm.com"
+  },
+  {
+    "id": 12,
+    "name": "Airbnb",
+    "description": "Airbnb operates an online marketplace for lodging and tourism experiences.",
+    "logo": "https://logo.clearbit.com/airbnb.com"
+  },
+  {
+    "id": 13,
+    "name": "Spotify",
+    "description": "Spotify offers audio streaming services worldwide.",
+    "logo": "https://logo.clearbit.com/spotify.com"
+  },
+  {
+    "id": 14,
+    "name": "Netflix",
+    "description": "Netflix is a subscription streaming service offering TV shows and movies.",
+    "logo": "https://logo.clearbit.com/netflix.com"
+  },
+  {
+    "id": 15,
+    "name": "Tesla",
+    "description": "Tesla specializes in electric vehicles, energy storage, and solar panel manufacturing.",
+    "logo": "https://logo.clearbit.com/tesla.com"
+  },
+  {
+    "id": 16,
+    "name": "Nike",
+    "description": "Nike designs, develops, and sells footwear, apparel, and accessories worldwide.",
+    "logo": "https://logo.clearbit.com/nike.com"
+  },
+  {
+    "id": 17,
+    "name": "Adobe",
+    "description": "Adobe creates multimedia and creativity software products.",
+    "logo": "https://logo.clearbit.com/adobe.com"
+  },
+  {
+    "id": 18,
+    "name": "Salesforce",
+    "description": "Salesforce provides customer relationship management software and cloud computing.",
+    "logo": "https://logo.clearbit.com/salesforce.com"
+  },
+  {
+    "id": 19,
+    "name": "Starbucks",
+    "description": "Starbucks operates as a global coffee company and coffeehouse chain.",
+    "logo": "https://logo.clearbit.com/starbucks.com"
+  },
+  {
+    "id": 20,
+    "name": "Uber",
+    "description": "Uber offers ride-hailing, food delivery, and freight transportation services.",
+    "logo": "https://logo.clearbit.com/uber.com"
+  }
+]
