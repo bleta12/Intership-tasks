@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  max-width: 1000px;
+  margin: 3rem auto;
+  background: #fdfcf8; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: brightness(0.9); 
+  padding: 2rem;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+#summary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+#summary p {
+  margin: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+#summary span {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+#filterAvailable {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+#filterAvailable:hover {
+  background: linear-gradient(135deg, #084298, #4b0dab);
+}
+
+form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+form input {
+  flex: 1 1 200px;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+form input:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+
+form button {
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #084298;
+}
+
+#bookList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.book {
+  background: #fff;
+  padding: 1.5rem;
+  border-left: 8px solid;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.book.available {
+  border-left-color: #28a745; 
+}
+
+.book.unavailable {
+  border-left-color: #dc3545; 
+}
+
+.book h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.book p {
+  margin: 0.4rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.rating-input {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.rating-input input {
+  width: 60px;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.book button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  background: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+
+.book button:hover {
+  background: #5a6268;
+}
+
+.book .toggle-btn {
+  background: #0d6efd;
+}
+
+.book .toggle-btn:hover {
+  background: #084298;
+}
+
+.book .remove-btn {
+  background: #dc3545;
+}
+
+.book .remove-btn:hover {
+  background: #bd2130;
+}
+
+.book .add-rating-btn {
+  background: #17a2b8;
+}
+
+.book .add-rating-btn:hover {
+  background: #138496;
+}

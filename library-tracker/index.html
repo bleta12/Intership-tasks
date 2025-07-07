@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📚 My Library</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>My Library</h1>
+
+  <div id="summary">
+    <p>Total books: <span id="totalBooks">0</span></p>
+    <p>Available books: <span id="availableBooks">0</span></p>
+    <p>Top-rated book: <span id="topRatedBook">N/A</span></p>
+    <button id="filterAvailable">Show Available Only</button>
+  </div>
+
+  <form id="addBookForm">
+    <input type="text" id="titleInput" placeholder="Book title" required />
+    <input type="text" id="authorInput" placeholder="Author name" required />
+    <button type="submit">Add Book</button>
+  </form>
+
+  <hr />
+
+  <h2>Books</h2>
+  <div id="bookList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
