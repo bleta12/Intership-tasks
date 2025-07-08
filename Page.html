@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Page</title>
   <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+
 </head>
 <body>
   <header class="navbar">
@@ -59,25 +61,35 @@
   </main>
 
 
-  <section class="trusted">
-    <h2 style="font-weight: normal;">Trusted by 45M+ users</h2>
-    <div class="logos">
-      <img src="Photos/wallmart.png" alt="Walmart" />
-      <div style="text-align: center;">
-  <div style="display: flex; justify-content: center; gap: 6px; margin-bottom: 8px;">
-    <img src="Photos/cisco.png" alt="">
-  </div>
-  <p style="font-family: Arial, sans-serif; font-weight: 900; font-size: 24px; color: #050038; letter-spacing: 2px;">
-    CISCO
-  </p>
-</div>
-      <img src="Photos/volvo.png" alt="Volvo" />
-<p style="font-family: Arial, sans-serif; font-weight: 900; margin-top: 10px; font-size: 25px; color: #050038;">
-  Deloitte
-</p>
-      <img src="Photos/okta.png" alt="Okta" />
+
+      <section class="trusted-slider company-slider-wrapper">
+  <h2>Trusted by 45M+ users</h2>
+  <div class="slider-container" id="sliderContainer">
+    <div class="slider-track" id="sliderTrack">
+      <!-- Slides injected here -->
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+
+<!-- Popup Modal -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span id="popupClose" class="popup-close">&times;</span>
+    <img id="popupLogo" src="" alt="Company Logo" />
+    <h3 id="popupName"></h3>
+    <p id="popupDescription"></p>
+  </div>
+</div>
+
+
+
+
+
+
+
 
    <section class="collaborate-section">
   <div class="collaborate-content">
@@ -356,6 +368,7 @@
   </div>
 </footer>
 
+<script src="slider.js"></script>
 
 </body>
 </html>
