@@ -9,7 +9,7 @@
   const popupDescription = document.getElementById('popupDescription');
 
   const visibleCount = 5;
-  const slideWidth = 190; 
+  const slideWidth = 190;
 
   let companies = [];
   let currentTranslate = 0;
@@ -23,7 +23,7 @@
 
   let autoSlideTimer = null;
 
-  
+
   fetch('companies.json')
     .then(res => res.json())
     .then(data => {
@@ -37,7 +37,7 @@
   function buildSlides() {
     sliderTrack.innerHTML = '';
 
-    
+
     companies.forEach(company => {
       const slide = document.createElement('div');
       slide.className = 'slide';
@@ -47,7 +47,7 @@
       img.alt = company.name;
       img.draggable = false;
 
-      
+
       img.addEventListener('click', () => {
         if (!isDragging) openPopup(company);
       });
@@ -57,7 +57,6 @@
     });
   }
 
-  // Set slider position to show slideIndex
   function goToSlide(slideIndex, animate = true) {
     if (animate) {
       sliderTrack.style.transition = 'transform 0.4s ease';
@@ -65,7 +64,6 @@
       sliderTrack.style.transition = 'none';
     }
 
-    // Clamp slideIndex to valid range
     if (slideIndex < 0) slideIndex = 0;
     if (slideIndex > companies.length - visibleCount) slideIndex = companies.length - visibleCount;
 
@@ -92,7 +90,6 @@
     goToSlide(nextIndex);
   }
 
-  // Dragging handlers
   function onDragStart(e) {
     isDragging = true;
     dragStartX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
@@ -114,7 +111,6 @@
 
     let nextTranslate = prevTranslate + dragDiff;
 
-    // Optional boundaries to prevent dragging too far
     const maxTranslate = 0;
     const minTranslate = -slideWidth * (companies.length - visibleCount);
 
@@ -130,7 +126,6 @@
     isDragging = false;
     sliderContainer.style.cursor = 'grab';
 
-    // Snap to closest slide after drag end
     const slideIndex = Math.round(-currentTranslate / slideWidth);
     goToSlide(slideIndex);
 
@@ -145,7 +140,6 @@
     window.removeEventListener('touchend', onDragEnd);
   }
 
-  // Popup open/close
   function openPopup(company) {
     popupLogo.src = company.logo;
     popupLogo.alt = company.name + ' logo';
@@ -164,7 +158,6 @@
     }
   });
 
-  // Attach dragstart to container
   sliderContainer.addEventListener('mousedown', onDragStart);
   sliderContainer.addEventListener('touchstart', onDragStart);
 })();

@@ -49,7 +49,7 @@ signUpBtn.addEventListener('click', () => {
     divs.forEach(div => section.removeChild(div));
     divs.forEach(div => section.appendChild(div));
 
-    // Toggle asc flag and update arrow rotation class
+    
     asc = !asc;
     if (asc) {
       button.classList.remove('desc');

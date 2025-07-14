@@ -3,7 +3,7 @@ function loadToastStyles() {
   if (!document.getElementById('toast-css')) {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'exercise1.css'; 
+    link.href = 'exercise1.css';
     link.id = 'toast-css';
     document.head.appendChild(link);
   }

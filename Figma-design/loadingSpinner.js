@@ -24,7 +24,7 @@ export default (function () {
 
   return {
     showInButton(button) {
-      if (targetButton) return; 
+      if (targetButton) return;
       targetButton = button;
       button.disabled = true;
       button.dataset.originalText = button.innerHTML;
